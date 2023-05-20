@@ -1,0 +1,9 @@
+.cntnr {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 2rem;
+    margin: 2rem;
+    gap: 1rem;
+    justify-content: center;
+}
