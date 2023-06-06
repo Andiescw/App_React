@@ -8,9 +8,11 @@ import { Link } from 'react-router-dom';
 import { ItemDetail } from '../ItemDetail/ItemDetail';
 
 export const Item = ({id, photo, name, price, description}) => {
-  const [lgShow, setLgShow] = useState(false);
+  const [show, setShow] = useState(false);
 
-  const handleShow = () => setLgShow(true);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  
 
 
   return (
@@ -28,9 +30,9 @@ export const Item = ({id, photo, name, price, description}) => {
 
                         <Link to={`/detail/${id}`}>
                             <Button onClick={handleShow}>Detalle</Button>{' '}
-                            {/* <ItemDetail show={show} handleClose={handleClose}/> */}
                         </Link>
                     </Card.Body>
+            {/* <ItemDetail show={show} handleClose={handleClose}/> */}
             </Card>
     </>
   )
